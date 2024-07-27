@@ -21,3 +21,24 @@ const getUserChoice = () => {
         return null;
     }
 };
+
+let computerScore = 0;
+let humanScore = 0;
+
+
+
+function whoWon(pc, user) {
+    if (pc === user) {
+        console.log("Tie");
+    } else if (
+        (pc === 'rock' && user === 'scissors') ||
+        (pc === 'scissors' && user === 'paper') ||
+        (pc === 'paper' && user === 'rock')
+    ) {
+        console.log("Computer won");
+        computerScore++;
+    } else {
+        console.log("User won");
+        humanScore++;
+    }
+}
