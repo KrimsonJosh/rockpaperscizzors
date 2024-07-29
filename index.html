@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script src="script.js"></script>
-    
-</body>
+<html>
+    <head>
+        <title>Weapon Triangle Game</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div class="content-container">
+            <header><h1>The Weapon Triangle Game</h1></header>
+            <div class="score-board">
+                <div id="user-label" class="badge">Warrior</div>
+                <div id="computer-label" class="badge">Opponent</div>
+                <span id="user-score">0</span>:<span id="computer-score">0</span>
+            </div>
+            <div class="guide-container center">
+                <h2>Fighting Guide</h2>
+                <p>Lance beats Sword. Sword beats Axe. Axe beats Lance.</p>
+                <p>First to 5 wins. Easy as that.</p>
+            </div>
+            
+            <p id="advice-message" class="center">Choose your weapon wisely!</p>
+            <div class="options center">
+                <div class="option">
+                    <img src="images/lance.png" alt="lance" id="lance">
+                </div>
+                <div class="option">
+                    <img src="images/sword.png" alt="sword" id="sword">
+                </div>
+                <div class="option">
+                    <img src="images/axe.png" alt="axe" id="axe">
+                </div>
+            </div>
+            
+            <div class="result center">
+                <p></p>
+                <button id="restart-btn" class="hide-btn">Fight again?</button>
+            </div>
+        </div>
+        
+        <footer>
+            <div id="credit">
+                <p>
+                Created by 
+                <a href="https://github.com/Bayoura"
+                 target="_blank">Bayoura</a>.
+                </p>
+                <p>
+                The logos were designed at <a href="https://logomakr.com/" target="_blank">LogoMakr.com</a>.
+              </p>
+            </div>
+        </footer>
+        
+        <script src="script.js"></script>   
+    </body>
 </html>
